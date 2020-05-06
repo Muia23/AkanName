@@ -36,6 +36,12 @@ const akanMale = ['Kwasi', 'Kwando', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
 const akanFemale = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 console.log("Arrays are in place");
+//Main-function
+function checkDay() {
+  akanDay= calculateDay();
+    checkgender();
+    console.log("checkDay is functioning");
+}
 //Gender function
 function checkgender(){
   const gender = document.getElementsByName("gender");
