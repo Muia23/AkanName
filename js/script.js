@@ -19,3 +19,15 @@ function getInput() {
     return false;
   }
 }
+//Day calculation
+function calculateDay() {
+    getInput();
+    d = (((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7;
+    return (Math.floor(d));
+    if (d < 0) {
+      d = d* -1;
+    }
+    else if (d > 0){
+      return d;
+    }
+}
