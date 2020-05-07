@@ -5,44 +5,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Find out you Akan name</title>
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron parent">
-        <div class ="row">
-          <div class="col-md-6 centre">
-            <!--User input start-->
-            <div class="form year-entry">
-              <label for ="year">Year of Birth:</label>
-              <input type="number" id="year" class="" placeholder="Enter year of birth">
+    <div class= "limiter">
+      <div class="container">
+        <div class="jumbotron-parent">
+          <h1>The Akan Tradition</h1>
+          <p> In a true African setting a child naming was no casual task. This is why the great ancestors initiated a well thought and organized naming system called <span>The Akan Naming System</span>. This names given to their infants were set to signify the day one is born and as tradition dictates, the day a child is born is determined by the soul. Why don't you find out your root Akan name
+          <div class ="profile" data-tilt style="transform: perspective(300px) rotateX(0deg) rotateY(0deg); will-change: transform;">
+            <img src ="images/icon6.png" alt ="profile">
+          </div>
+          <form class = "input-form">
+            <span class = "title">ENTER YOUR BIRTH DATE</span>
+            <div class="form-year-entry">
+              <input class="year-input" type="number" id="year" placeholder="Enter year of birth">
             </div>
-            <div class = "form month-entry">
-              <label for ="month">Month:</label>
-              <input type="number" id="month" class="" placeholder="Enter birth month" >
+            <div class = "form-month-entry">
+              <input class="month-input" type="number" id="month" placeholder="Enter birth month" >
             </div>
-            <div class = "form day-entry">
-              <label for ="day">Day:</label>
-              <input type="number" id="day" class="" placeholder="Enter day" >
+            <div class = "form-day-entry">
+              <input class="day-input" type="number" id="day" placeholder="Enter day" >
             </div>
-            <!--Form start-->
-            <form class = "gender" >
-              <input type="checkbox" id="male" class="" name="gender" value="M"> Male
-              <input type="checkbox" id="female" class="" name="gender" value="F">Female
-              <br>
-              <a href="#result">
-                <button type="button" name="button" class="button" >Submit</button>
-              </a>
-            </form>
+            <div class ="checkbox-container">
+              <ul class="gender-checkbox">
+                <li><input type="checkbox" id="male" name="gender" value="M"><label for ="label-checkbox">MALE</label></li>
+                <li><input type="checkbox" id="female"  name="gender" value="F"><label for ="label-checkbox">FEMALE</label></li>
+              </ul>
+            </div>
+            <div class="submit-button">
+              <a href="#result"><button type="button" name="button" class="button" onclick="checkDay()">Submit</button></a>
+            </div>
+          </form>
             <!--Form end-->
             <!--User input end-->
             <!--output-->
-            <h3 id="output"></h3>            
+            <h3 id="output"></h3>
+          </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
     <script src="js/script.js"></script>
   </body>
 </html>
