@@ -6,7 +6,7 @@ function getInput() {
   years =  document.getElementById("year").value;
   century = parseInt(years.slice(0, 2));
   year = parseInt(years.slice(2, 5));
-  console.log("Input functioning");
+  //console.log("Input functioning");
 
   if(day == ""){
     alert("Input the correct date");
@@ -35,7 +35,7 @@ function calculateDay() {
 const akanMale = ['Kwasi', 'Kwando', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 const akanFemale = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
 const dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-console.log("Arrays are in place");
+//console.log("Arrays are in place");
 //Main-function
 function checkDay() {
   akanDay= calculateDay();
@@ -50,7 +50,7 @@ function checkgender(){
   } else if (gender[1].checked == true){
     var akangender = "F";
   } else {
-    console.log("Entered")
+    //console.log("Entered")
   }
     switch(akangender){
           case akangender = "M" :
@@ -77,7 +77,7 @@ function checkgender(){
                       document.getElementById("output").innerHTML = "Born on a Saturday." + " Your akan name is " + akanMale[6];
                     break;
                     default:
-                    console.console.log("Male");
+                    //console.console.log("Male");
                   }
             break;
             case akangender = "F":
@@ -107,6 +107,6 @@ function checkgender(){
                   }
             break
             default:
-            console.log("Female");
+            //console.log("Female");
   }
 }

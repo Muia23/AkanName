@@ -22,13 +22,13 @@
           <form class = "input-form">
             <span class = "title">ENTER YOUR BIRTH DATE</span>
             <div class="form-year-entry">
-              <input class="year-input" type="number" id="year" placeholder="Enter year of birth">
+              <input class="year-input" type="number" id="year" placeholder="Enter year of birth" required min="1000" max="4000">
             </div>
             <div class = "form-month-entry">
-              <input class="month-input" type="number" id="month" placeholder="Enter birth month" >
+              <input class="month-input" type="number" id="month" placeholder="Enter birth month" required min="0" max="12">
             </div>
             <div class = "form-day-entry">
-              <input class="day-input" type="number" id="day" placeholder="Enter day" >
+              <input class="day-input" type="number" id="day" placeholder="Enter day" required min="0" max="31">
             </div>
             <div class ="checkbox-container">
               <ul class="gender-checkbox">
