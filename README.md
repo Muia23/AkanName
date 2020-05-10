@@ -1,13 +1,13 @@
 # Akan-Calculator
 
 ## Author
-- [muia23](https://muia23.github.io/AkanName/)
+- [muia23](https://github.com/Muia23)
 
 ## Project description
 This is an Akan name calculator that uses the user's birthday to calculate the day they were born and from that. Inform them what their Akan name would be if they were priviledged enough to born in the tribe of Akan.
 ## Project setup instruction
 The index HTML file can be open on a local browser and the page should open.
-Here is a link to the live site()
+Here is a link to the live site(https://muia23.github.io/AkanName/)
 ## License info
 MIT License
 
