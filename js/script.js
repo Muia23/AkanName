@@ -8,15 +8,20 @@ function getInput() {
   year = parseInt(years.slice(2, 5));
   //console.log("Input functioning");
 
-  if(day == ""){
-    alert("Input the correct date");
-    return false;
-  } else if(month == ""){
-    alert("Input the correct month");
-    return false;
-  }else if(years == ""){
-    alert("Input correct year");
-    return false;
+  var isInvalidDay = function(day){
+    return day <=0 || day > 31;
+  };
+  var isInvalidMonth = function(month){
+    return month <=0 || month > 12;
+  }
+
+  while(isInvalidDay(day)){
+    alert("Valid days are between 1 and 31. Please input a valid day");
+    break;
+  }
+  while(isInvalidMonth(month)){
+    alert("Valid months are between 1 and 12. Please input a valid month")
+    break;
   }
 }
 //Day calculation
