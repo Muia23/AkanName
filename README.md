@@ -7,7 +7,7 @@
 This is an Akan name calculator that uses the user's birthday to calculate the day they were born and from that. Inform them what their Akan name would be if they were priviledged enough to from the tribe of Akan.
 ## Project setup instruction
 The index HTML file can be open on a local browser and the page should open.
-Here is a link to the live site()
+Here is a link to the live site(https://muia23.github.io/AkanName/)
 ## BBD
 Our calculator works on a few behaviors:
 1.Day is valid if it is more than 0 but less than 31.
