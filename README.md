@@ -8,6 +8,16 @@ This is an Akan name calculator that uses the user's birthday to calculate the d
 ## Project setup instruction
 The index HTML file can be open on a local browser and the page should open.
 Here is a link to the live site()
+## BBD
+Our calculator works on a few behaviors:
+1.Day is valid if it is more than 0 but less than 31.
+2.Month is valid if it is more thab 0 but less than 12.
+3.Form should be filled to calculate.
+
+## Technologies in place
+The calculator is made possible using beginner HTML, JavaScript with if and switch statements.
+
+
 ## License info
 MIT License
 
