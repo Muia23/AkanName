@@ -8,17 +8,21 @@ function getInput() {
   year = parseInt(years.slice(2, 5));
   //console.log("Input functioning");
 
-  if(day == ""){
-    alert("Input the correct date");
-    return false;
-  } else if(month == ""){
-    alert("Input the correct month");
-    return false;
-  }else if(years == ""){
-    alert("Input correct year");
+  if((day == "" ) && (month == "") && (years == "")){
+    alert("Give it a try!");
     return false;
   }
-}
+  else if((day == "" )||(day <= 0) ||(day > 31)){
+    alert("Input a valid day between 1 and 31");
+    return false;
+  } else if((month == "")||(month <= 0) ||(month > 31)){
+    alert("Input a valid month between 1 and 12");
+    return false;
+  }else if((years == "")||(years <= 0) ||(years > 4000)){
+    alert("Oops! That can't be right");
+    return false;
+  }
+};
 //Day calculation
 function calculateDay() {
     getInput();
@@ -30,7 +34,7 @@ function calculateDay() {
     else if (d > 0){
       return d;
     }
-}
+};
 //arrays
 const akanMale = ['Kwasi', 'Kwando', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
 const akanFemale = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
@@ -41,7 +45,7 @@ function checkDay() {
   akanDay= calculateDay();
     checkgender();
     //console.log("checkDay is functioning");
-}
+};
 //Gender function
 function checkgender(){
   const gender = document.getElementsByName("gender");
@@ -109,4 +113,4 @@ function checkgender(){
             default:
             //console.log("Female");
   }
-}
+};
